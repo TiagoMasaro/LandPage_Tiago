@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description"
+        content="Currículo e portfólio de Tiago Masaro Carvalho, estudante de Sistemas de Informação e responsável de TI.">
+    <title>Tiago Masaro Carvalho | Currículo</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- BARRA DE PROGRESSO DE LEITURA -->
+    <div id="progresso"></div>
+
+    <!-- MENU DO TOPO -->
+    <nav>
+        <div class="wrap">
+            <a class="logo" href="#topo">TM</a>
+            <button id="menu" aria-label="Abrir menu">☰</button>
+            <div class="links" id="links">
+                <a href="#sobre">Sobre</a><a href="#experiencia">Experiência</a><a href="#formacao">Formação</a><a
+                    href="#habilidades">Habilidades</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a>
+            </div>
+            <button id="theme" aria-label="Alternar tema">☾</button>
+        </div>
+    </nav>
+
+    <div class="wrap" id="topo">
+        <!-- INÍCIO -->
+        <header>
+            <!-- Salve sua foto na mesma pasta com o nome foto.jpg -->
+            <div class="photo"><img src="foto.jpg" alt="Foto de Tiago Masaro Carvalho"></div>
+            <div>
+                <p class="tag">Estudante · Técnico em Informática · TI</p>
+                <h1>Tiago Masaro Carvalho</h1>
+                <a class="btn" href="#contato">Entrar em contato</a>
+            </div>
+        </header>
+
+        <!-- 01 SOBRE -->
+        <section id="sobre">
+            <h2><span>01</span>Sobre mim</h2>
+            <p>Sou técnico em Informática e estudante de Sistemas de Informação. Gosto de entender como a tecnologia
+                resolve problemas do dia a dia e de colocar isso em prática.</p>
+            <p>Atualmente sou responsável pela TI de um escritório de contabilidade em Machado (MG), onde cuido de
+                equipamentos, rede, sistemas e suporte aos colegas.</p>
+            <p>Participei por 3 anos de um grupo de estudos de robótica, que me deu base em lógica, eletrônica e
+                trabalho em equipe. Meu objetivo é crescer na área de tecnologia e continuar aprendendo.</p>
+        </section>
+
+        <!-- 02 EXPERIÊNCIA -->
+        <section id="experiencia">
+            <h2><span>02</span>Experiência</h2>
+            <ol class="path">
+                <li class="now">
+                    <h3>Responsável pela TI</h3>
+                    <div class="when">Escritório de contabilidade · Machado (MG) · Atualmente</div>
+                    <p>Gestão de equipamentos, rede, sistemas e suporte aos usuários.</p>
+                </li>
+                <li>
+                    <h3>Estagiário</h3>
+                    <div class="when">Axnet · 2 meses</div>
+                    <p>Primeiro contato com o dia a dia profissional de uma empresa de tecnologia.</p>
+                </li>
+                <li>
+                    <h3>Grupo de estudos em robótica</h3>
+                    <div class="when">IFSULDEMINAS – Campus Machado · 3 anos</div>
+                    <p>Projetos em equipe unindo eletrônica, programação e resolução de problemas.</p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- 03 FORMAÇÃO -->
+        <section id="formacao">
+            <h2><span>03</span>Formação</h2>
+            <div class="grid">
+                <div class="box">
+                    <h3>Sistemas de Informação</h3>
+                    <p>Graduação em andamento</p>
+                </div>
+                <div class="box">
+                    <h3>Técnico em Informática</h3>
+                    <p>IFSULDEMINAS – Campus Machado · Concluído</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 04 HABILIDADES -->
+        <section id="habilidades">
+            <h2><span>04</span>Habilidades</h2>
+            <ul class="chips">
+                <li>Suporte técnico</li>
+                <li>Manutenção de computadores</li>
+                <li>Redes</li>
+                <li>Backup e segurança</li>
+                <li>Robótica</li>
+                <li>Lógica de programação</li>
+                <li>Trabalho em equipe</li>
+            </ul>
+        </section>
+
+        <!-- 05 PROJETOS -->
+        <section id="projetos">
+            <h2><span>05</span>Projetos</h2>
+            <p>Projetos em desenvolvimento.</p>
+        </section>
+
+        <!-- 06 CONTATO -->
+        <section id="contato">
+            <h2><span>06</span>Entre em contato</h2>
+            <div class="info">
+                <div><b>E-mail</b><a
+                        href="mailto:tiago.masaro@alunos.ifsuldeminas.edu.br">tiago.masaro@alunos.ifsuldeminas.edu.br</a>
+                    <button class="copy" id="copiar" type="button">Copiar</button>
+                </div>
+                <div><b>Telefone</b><a href="tel:+5535997751404">(35) 99775-1404</a></div>
+                <div><b>LinkedIn</b><a href="https://www.linkedin.com/in/tiago-masaro-carvalho-b498193a4">Ver perfil</a>
+                </div>
+                <div><b>Localização</b>Machado, Minas Gerais, Brasil</div>
+            </div>
+
+            <form id="form" novalidate>
+                <label for="nome">Nome</label>
+                <input id="nome" type="text" autocomplete="name">
+                <label for="email">Seu e-mail</label>
+                <input id="email" type="email" autocomplete="email">
+                <label for="msg">Mensagem</label>
+                <textarea id="msg"></textarea>
+                <p class="erro" id="erro" role="alert"></p>
+                <button class="btn" type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="wrap">
+            <h3>Tiago Masaro Carvalho</h3>
+            <p>Sistemas de Informação · TI · Robótica</p>
+            <p>© <span id="ano">2026</span> Tiago Masaro Carvalho. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- VOLTAR AO TOPO -->
+    <button id="topo-btn" aria-label="Voltar ao topo">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
